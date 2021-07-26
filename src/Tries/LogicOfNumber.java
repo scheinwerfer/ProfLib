@@ -4,11 +4,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import static jdk.internal.org.jline.utils.AttributedStringBuilder.append;
 
 public class LogicOfNumber extends JPanel implements ActionListener {
 
@@ -38,7 +35,7 @@ public class LogicOfNumber extends JPanel implements ActionListener {
             Collections.rotate(number, 1);
             number.set(0, '+');
         }
-        StringBuffer sb = new StringBuffer("");
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < number.size(); i++) {
             sb.append(number.get(i));
         }
